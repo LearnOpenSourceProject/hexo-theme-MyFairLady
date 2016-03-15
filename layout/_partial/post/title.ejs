@@ -1,0 +1,4 @@
+<a href="<%- url_for(post.path) %>" class="article-date">
+    <span class="fa fa-clock-o" aria-hidden="true"></span>
+    <time datetime="<%= date(post.date, 'MMM DD YYYY') %>" itemprop="datePublished"><%- date(post.date, 'MMM DD YYYY') %></time>
+</a>

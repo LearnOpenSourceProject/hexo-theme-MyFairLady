@@ -1,0 +1,91 @@
+@import "../color";
+@import "../base";
+@import "../font";
+.con {
+    text-align: center;
+    width: @con-width;
+    margin: 0 auto;
+    .article-main {
+        margin-bottom: 20px;
+        .article-header {
+            text-align: left;
+            margin-top: 97px;
+            a {
+                color: @blog-header-color;
+            }
+            .article-title {
+                font-size: @article-title-size;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .article-meta {
+            margin-bottom: 10px;
+            text-align: right;
+            a {
+                color: @article-meta-a;
+            }
+        }
+        .article-inner {
+            text-align: center;
+            .article-entry {
+                display: inline-block;
+                width: @con-width;
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    text-align: left;
+                    margin-bottom: 10px;
+                    color: @title-a-color;
+                }
+                p {
+                    text-align: justify;
+                    // text-align-last: justify;
+                    text-justify: distribute;
+                    display: block;
+                    font-family: @article-entry-p-font;
+                    word-wrap: break-word;
+                    line-height: @article-entry-p-lHeight;
+                    font-size: @article-entry-p-size;
+                    font-weight: 400;
+                    letter-spacing: 0.12px;
+                }
+                .article-more-link {
+                    position: absolute;
+                    background: @blog-link-color;
+                    margin-top: 16px;
+                    display: flex;
+                    justify-content: center;
+                    padding-left: 5px;
+                    border-radius: 3px solid @blog-header-bg;
+                    width: @more-link-width;
+                    opacity: 0.8;
+                    a {
+                        font-size: @blog-header-size - 1;
+                        color: @black;
+                        &:hover {
+                            color: @color-a;
+                            background: #FFF;
+                            font-weight: 900;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lineStyle {
+        background: @lineStyle-bg;
+        position: relative;
+        display: block;
+        opacity: 0.2;
+        height: 1px;
+        top: 59px;
+    }
+    @import "post/paginator";
+}
+@import "post/toTop";

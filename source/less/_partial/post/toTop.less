@@ -1,0 +1,35 @@
+@import "../../base";
+@import "../../font";
+@import "../../color";
+
+.toTop{
+    position:fixed;
+    z-index: 20;
+    width: @toTop;
+    height: @toTop;
+    background-color: @black;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    bottom: 113px;
+    left: 90%;
+    >.stick{
+        position: absolute;
+        width: 8px;
+        height: 14px;
+        display: block;
+        left: 15px;
+        top: 15px;
+        border-radius: 1px;
+        background-color:rgba(246, 74, 182, 0.66);
+    }
+    >.arrow{
+        position: absolute;
+        left: 10px;
+        top: -3.1px;
+        width: 0;
+        height: 0;
+        border: 9px solid rgba(126, 27, 27, 0);
+        border-bottom-color: rgba(246, 74, 182, 0.66);
+    }
+}

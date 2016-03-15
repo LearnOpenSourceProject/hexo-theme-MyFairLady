@@ -1,0 +1,16 @@
+<div class="con">
+    <div class="tags-main">
+        <header class="tags-title">
+            <h1>
+                # 归档页
+            </h1>
+        </header>
+        <div class="tags-entry">
+            <% page.posts.each(function(post){ %>
+                <%- partial('_partial/archive',{post:post,index:false}) %>
+            <% }) %>
+
+            <%- partial('_partial/post/paginator') %>
+        </div>
+    </div>
+</div>

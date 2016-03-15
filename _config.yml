@@ -1,0 +1,34 @@
+#title
+title: Yzz
+# Header
+menu:
+    home: /
+    about me : /about
+    archives: /archives
+# title
+header:
+    aboutHeader: about me
+    aboutData: Information
+    aboutInformation: Social
+    aboutTarget: Project
+    aboutFriendlink: Talent
+# author date
+data:
+    name: 杨挺or杨滋滋
+    school: 本科/广东东软学院
+    position: 前端工程师
+# SubNav
+subnav:
+    gitHub: "https://github.com/yzzting"
+    weiBo: "http://weibo.com/yzzting"
+    zhiHu: "https://www.zhihu.com/people/yang-zi-zi-1995"
+# Project
+project:
+    hexo主题: #
+# friendlink
+friendlink:
+    ahonn的博客: http://www.ahonn.me
+    刘帆帆的博客: http://henbukexue.science
+
+# read more
+excerpt_link: read more
