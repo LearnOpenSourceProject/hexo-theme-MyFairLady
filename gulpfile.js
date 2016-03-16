@@ -8,4 +8,5 @@ gulp.task('default',function () {
 gulp.task('lessWatch',function () {
     gulp.watch('source/less/*.less',['default'])
     gulp.watch('source/less/_partial/*.less',['default'])
+    gulp.watch('source/less/_partial/post/*.less',['default'])
 })
