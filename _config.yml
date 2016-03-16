@@ -7,7 +7,7 @@ menu:
     archives: /archives
 # title
 header:
-    aboutHeader: about me
+    aboutHeader: About
     aboutData: Information
     aboutInformation: Social
     aboutTarget: Project

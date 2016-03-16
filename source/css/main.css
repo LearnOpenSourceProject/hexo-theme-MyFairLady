@@ -343,6 +343,44 @@ pre .css ~ * .id {
   border: 9px solid rgba(126, 27, 27, 0);
   border-bottom-color: rgba(246, 74, 182, 0.66);
 }
+header {
+  color: rgba(246, 74, 182, 0.66);
+}
+.about {
+  font-family: 'Source Han Sans', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+  margin: 4rem auto;
+  position: relative;
+  width: 80%;
+  max-width: 710px;
+  word-wrap: break-word;
+  text-align: left;
+  left: -4.6%;
+}
+.about .about-title {
+  font-size: 31px;
+  margin: 30px 10px 0 0;
+}
+.about .about-main {
+  font-size: 20px;
+}
+.about .about-main > * {
+  padding-bottom: 20px;
+}
+.about .aboutData {
+  margin-top: 36px;
+  padding-bottom: 20px;
+}
+.about .List {
+  text-align: left;
+  padding-left: 36px;
+}
+.about .List li {
+  margin: 11.2px 0;
+}
+.about .List a:hover {
+  text-decoration: underline;
+  font-weight: 800;
+}
 .blog-footer {
   display: block;
   text-align: center;

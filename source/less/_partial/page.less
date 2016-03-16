@@ -1,0 +1,43 @@
+@import "../color";
+@import "../base";
+@import "../font";
+
+header{
+    color: @blog-header-color;
+}
+
+.about{
+    font-family: @blog-header-font;
+    margin:4rem auto;
+    position: relative;
+    width: @aboutWidth;
+    max-width: @aboutMaxWidth;
+    word-wrap: break-word;
+    text-align: left;
+    left:-4.6%;
+    .about-title{
+        font-size: @article-title-size - 2px;
+        margin:30px 10px 0 0;
+    }
+    .about-main{
+        font-size: @article-title-size - 13px;
+        > * {
+            padding-bottom: 20px;
+        }
+    }
+    .aboutData{
+        margin-top: 36px;
+        padding-bottom: 20px;
+    }
+    .List{
+        text-align: left;
+        padding-left: 36px;
+        li{
+            margin:11.2px 0;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: 800;
+        }
+    }
+}
