@@ -1,5 +1,7 @@
 ## hexo-theme-MyFairLady
 
+**Live:** [yzz blog](http://www.yzz1995.cn)
+
 ### document
 
 * 中文文档
