@@ -3,15 +3,16 @@
 @import "../font";
 .con {
     text-align: center;
-    width: @con-width;
     margin: 0 auto;
+    .blog-main {
+        margin-top: 5%;
+    }
     .article-main {
         margin-bottom: 20px;
         .article-header {
             text-align: left;
-            margin-top: 97px;
             a {
-                color: @blog-header-color;
+                color: @blog-main-color;
             }
             .article-title {
                 font-size: @article-title-size;
@@ -20,18 +21,10 @@
                 }
             }
         }
-        .article-meta {
-            margin-bottom: 10px;
-            text-align: right;
-            a {
-                color: @article-meta-a;
-            }
-        }
+        @import "post/date";
         .article-inner {
             text-align: center;
             .article-entry {
-                display: inline-block;
-                width: @con-width;
                 h1,
                 h2,
                 h3,
@@ -46,35 +39,15 @@
                     text-align: justify;
                     text-justify: distribute;
                     display: block;
-                    font-family: @article-entry-p-font;
+                    font-family: @blog-main-font;
                     word-wrap: break-word;
-                    line-height: @article-entry-p-lHeight;
+                    line-height: @article-entry-p-lHeight;//base
                     font-size: @article-entry-p-size;
                     font-weight: 600;
                     letter-spacing: 0.12px;
-                    color: rgb(93, 93, 93)
+                    color: @article-entry-p;
                 }
-                .article-more-link {
-                    position: absolute;
-                    background: @blog-link-color;
-                    margin-top: 16px;
-                    display: flex;
-                    justify-content: center;
-                    padding-left: 5px;
-                    border-radius: 3px solid @blog-header-bg;
-                    width: @more-link-width;
-                    opacity: 0.8;
-                    a {
-                        font-size: @blog-header-size - 1;
-                        color: @black;
-                        &:hover {
-                            color: @color-a;
-                            background: #FFF;
-                            font-weight: 900;
-                            text-decoration: underline;
-                        }
-                    }
-                }
+                @import "post/morelink";
             }
         }
     }

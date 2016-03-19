@@ -1,23 +1,24 @@
+@import "../../color";
 .older-posts-link {
-    margin-top: 94px;
     float: right;
-    background-color: rgba(246, 74, 182, 0.66);
+    background-color: @blog-main-color;
     border-radius: 4px;
-    height: 35px;
-    width: 120px;
+    height: @posts-link-height;
+    width: @posts-link-width;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.7;
-    &:hover{
-        color: #000;
+    margin-top: 10%;
+    &:hover {
+        color: @black;
         opacity: 3;
-        border-color: #fff;
+        border-color: @white;
     }
-    .page-number{
+    .page-number {
         display: none;
     }
-    a{
-        color: #fff;
+    a {
+        color: @white;
     }
 }

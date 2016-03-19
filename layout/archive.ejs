@@ -1,4 +1,4 @@
-<div class="container">
+<div class="con">
     <div class="tags-main">
         <header class="tags-title">
             <h1>
@@ -8,11 +8,10 @@
         <div class="tags-entry">
             <ul>
                 <% page.posts.each(function(post){ %>
-                    <%- partial('_partial/archive',{post:post,index:false}) %>
+                    <%- partial('_partial/archive',{post:post,index:true}) %>
                 <% }) %>
-
-                <%- partial('_partial/post/paginator') %>
             </ul>
+            <%- partial('_partial/post/paginator') %>
         </div>
     </div>
 </div>

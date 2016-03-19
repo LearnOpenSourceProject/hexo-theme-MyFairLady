@@ -1,38 +1,39 @@
 @import "../color";
 @import "../font";
-.blog-header {
-    font-family: @blog-header-font;
-    font-size: @blog-header-size;
-    height: @blog-header-height;
-    opacity: 0.6;
-    margin: 25px 100px 0;
-    padding: 0 23% 0;
-    .nav-list-item {
-        display: inline-block;
-        background-color: @blog-header-color;
-        color: @black;
-        font-size: @blog-header-a-size;
-        cursor: auto;
-        text-transform: capitalize;
-        padding: 9px 10px;
-        a{
-            color: @black;
+.navHeader {
+    height: 100%;
+    .nav {
+        font-family: @blog-main-font;
+        font-size: @blog-header-size;
+        opacity: 0.6;
+        text-align: center;
+        left: 80px;
+        .logo-link {
+            color: @blog-main-color;
+            font-size: @article-title-size + 34px;
+            font-family: @logo-link-font;
+            top: 13px;
+            position: relative;
         }
-        &:hover{
-            text-decoration: underline;
-            font-weight: 900;
-            background: #fff;
-        }
-        &:hover a{
-            color: #000;
+        .nav-list-item {
+            display: inline-block;
+            background-color: @blog-main-color;
+            color: @white;
+            font-size: @blog-header-size;
+            cursor: auto;
+            text-transform: capitalize;
+            padding: 9px 10px;
+            a {
+                color: @white;
+            }
+            &:hover {
+                text-decoration: underline;
+                font-weight: 900;
+                background: @white;
+            }
+            &:hover a {
+                color: @black;
+            }
         }
     }
-
-}
-.logo-link {
-    color: @blog-header-color;
-    font-size: @article-title-size + 34px;
-    float: right;
-    margin-top: -34px;
-    font-family: Microsoft YaHei;
 }

@@ -1,8 +1,13 @@
-    <%- partial('post/scroll-button') %>
+
+
+<%- partial('post/scroll-button') %>
     <footer class="blog-footer">
-        <div class="container">
             <div id="footer-info" class="inner">
-                &copy; <%=date(new Date(),'YYYY') %> <%= config.title %> Powered by <a href="#" target="_blank"><%= config.author %></a>
+                &copy;
+                <%=date(new Date(),'YYYY') %>
+                    <%= config.title %> Powered by
+                        <a href="#" target="_blank">
+                            <%= config.author %>
+                        </a>
             </div>
-        </div>
     </footer>
