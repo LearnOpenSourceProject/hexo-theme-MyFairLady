@@ -4,7 +4,7 @@
 
 ### document
 
-* 中文文档
+* [中文文档](http://www.yzz1995.cn/2016/03/20/%E8%AE%BE%E8%AE%A1hexo%E4%B8%BB%E9%A2%98/)
 * document
 
 ### Installation
