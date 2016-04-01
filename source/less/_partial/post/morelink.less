@@ -3,22 +3,15 @@
 @import "../../font";
 .article-more-link {
     position: absolute;
-    background: @blog-main-color;
     margin-top: 16px;
     display: flex;
     justify-content: center;
-    border-radius: 3px solid @blog-header-bg;
     width: @more-link-width;
-    opacity: 0.8;
-    &:hover {
-        background: @white;
-    }
     a {
         font-size: @blog-header-size - 1;
-        color: @white;
+        color: @blog-main-color;
+        font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
         &:hover {
-            color: @black;
-            font-weight: 900;
             text-decoration: underline;
         }
     }

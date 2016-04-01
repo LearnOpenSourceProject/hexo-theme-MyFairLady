@@ -1,24 +1,22 @@
 @import "../../color";
 .older-posts-link {
     float: right;
-    background-color: @blog-main-color;
     border-radius: 4px;
     height: @posts-link-height;
     width: @posts-link-width;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
     margin-top: 10%;
     &:hover {
-        color: @black;
-        opacity: 3;
-        border-color: @white;
+        text-decoration: underline;
     }
     .page-number {
         display: none;
     }
     a {
-        color: @white;
+        color: @blog-main-color;
+        font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
     }
 }
