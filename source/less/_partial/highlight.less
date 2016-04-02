@@ -1,5 +1,5 @@
-.article-entry pre,
-.article-entry .highlight {
+.article-entry .highlight,
+.article-entry pre {
     background: #f7f7f7;
     margin: 10px 0;
     padding: 10px;
@@ -11,13 +11,13 @@
     text-justify: distribute;
     display: block;
 }
-.article-entry .highlight .gutter pre,
-.article-entry .gist .gist-file .gist-data .line-numbers {
+.article-entry .gist .gist-file .gist-data .line-numbers,
+.article-entry .highlight .gutter pre {
     color: #666;
 }
-.article-entry pre,
-.article-entry code {
-    font-family: Comic Sans MS;
+.article-entry code,
+.article-entry pre {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
 }
 .article-entry pre {
     color: #000;
@@ -120,23 +120,23 @@
 pre .comment {
     color: #75715e;
 }
-pre .keyword,
+pre .class .params,
 pre .function .keyword,
-pre .class .params {
+pre .keyword {
     color: #f02ce2;
 }
-pre .tag,
 pre .doctype,
+pre .function,
 pre .params,
-pre .function {
+pre .tag {
     color: #f5000f;
 }
-pre .css ~ * .tag,
-pre .title,
 pre .at_rule,
 pre .at_rule .keyword,
+pre .css ~ * .tag,
 pre .preprocessor,
-pre .preprocessor .keyword {
+pre .preprocessor .keyword,
+pre .title {
     color: #f92672;
 }
 pre .attribute,
@@ -146,14 +146,14 @@ pre .css ~ * .class,
 pre .function .title {
     color: #00a82a;
 }
-pre .value,
-pre .string {
+pre .string,
+pre .value {
     color: #030dff;
 }
 pre .number {
     color: #7163d7;
 }
-pre .id,
-pre .css ~ * .id {
+pre .css ~ * .id,
+pre .id {
     color: #fd971f;
 }
