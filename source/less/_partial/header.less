@@ -2,19 +2,25 @@
 @import "../font";
 .navHeader {
     height: 100%;
+    text-align: center;
+    margin-top: 5%;
+    .logo-link {
+        font-size: @article-title-size - 10;
+        font-family: @logo-link-font;
+        a {
+            color: @white;
+            background: @blog-main-color;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            padding: 0 2rem;
+            display: inline-block;
+        }
+    }
     .nav {
         font-family: @blog-main-font;
         font-size: @blog-header-size;
-        opacity: 0.6;
-        text-align: center;
-        left: 80px;
-        .logo-link {
-            color: @blog-main-color;
-            font-size: @article-title-size + 34px;
-            font-family: @logo-link-font;
-            top: 13px;
-            position: relative;
-        }
+        position: relative;
+        left: 0.8rem;
         .nav-list-item {
             display: inline-block;
             font-size: @blog-header-size;

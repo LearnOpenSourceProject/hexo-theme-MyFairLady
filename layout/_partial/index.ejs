@@ -20,7 +20,11 @@
                     <% } %>
                         <div class="article-inner">
                             <div class="article-entry" itemprop="articleBody">
-                                <%- post.excerpt %>
+                                <% if (post.excerpt && index){ %>
+                                  <%- post.excerpt %>
+                                <% } else { %>
+                                  <%- post.content %>
+                                <% } %>
                                     <p class="article-more-link">
                                         <a href="<%- url_for(post.path) %>#more">
                                             <%= theme.excerpt_link %>></a>

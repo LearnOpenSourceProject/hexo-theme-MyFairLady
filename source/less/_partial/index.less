@@ -9,10 +9,15 @@
     }
     .article-main {
         margin-bottom: 20px;
+        // background: @article-main-color;
+        padding: 10px;
+        // box-shadow: -4px 8px 5px 1px rgba(0,0,0,0.2) ;
+    	text-shadow: none;
         .article-header {
             text-align: left;
             a {
-                color: @blog-main-color;
+                color: #212121;
+                font-weight: 900;
             }
             .article-title {
                 font-size: @article-title-size;
@@ -34,6 +39,10 @@
                     text-align: left;
                     margin-bottom: 10px;
                     color: @title-a-color;
+                    ::before{
+                        content: "#";
+                        color:@blog-main-color;
+                    }
                 }
                 p {
                     text-align: justify;
