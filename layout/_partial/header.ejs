@@ -4,12 +4,11 @@
             for(var i in theme.menu) { %>
                 <% if (first) { %>
         <ul class="nav nav-list">
-
-        <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-        <% first = false %>
-        <% } else { %>
-        <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-        <% } %>
-    <% } %>
-    </ul>
+            <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+            <% first = false %>
+                <% } else { %>
+            <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+                <% } %>
+            <% } %>
+        </ul>
 </header>

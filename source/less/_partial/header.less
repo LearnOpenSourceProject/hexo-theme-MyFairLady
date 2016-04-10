@@ -16,25 +16,25 @@
             display: inline-block;
         }
     }
-    .nav {
-        font-family: @blog-main-font;
+}
+.nav {
+    font-family: @blog-main-font;
+    font-size: @blog-header-size;
+    position: relative;
+    left: 0.8rem;
+    .nav-list-item {
+        display: inline-block;
         font-size: @blog-header-size;
-        position: relative;
-        left: 0.8rem;
-        .nav-list-item {
-            display: inline-block;
-            font-size: @blog-header-size;
-            cursor: auto;
-            text-transform: capitalize;
-            padding: 9px 10px;
-            a {
-                color: @blog-main-color;
-                font-size: 22px;
-                font-weight: 800;
-            }
-            &:hover {
-                text-decoration: underline;
-            }
+        cursor: auto;
+        text-transform: capitalize;
+        padding: 9px 10px;
+        a {
+            color: @blog-main-color;
+            font-size: 20px;
+            // font-weight: 800;
+        }
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
