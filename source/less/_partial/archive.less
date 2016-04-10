@@ -1,19 +1,32 @@
+@import "../color";
 .tags-main {
     margin-top: 3%;
     padding: 0 5%;
 }
-.tags-title {
+.tags-title{
+    color:@article-entry-p;
+    font-size: 28px;
     text-align: left;
-}
-.tags-entry ul li {
-    margin: 34.1px 0 68.2px 31px;
-    .article-title {
-        font-size: @article-title-size - 8px;
+    ::before{
+        content: '#';
+        color: @blog-main-color;
     }
-    .article-dateTime {
+}
+.tags-entry{
+    padding: 5%;
+    height: 24rem;
+    .article-dateTime{
         float: right;
-        .article-date {
-            color: @article-date;
+    }
+    ul li{
+        height: 3rem;
+        a{
+            font-family: @blog-main-font;
+            color: @article-entry-p;
+            font-size: 18px;
+            &:hover{
+                border-bottom: 2px solid @blog-main-color;
+            }
         }
     }
 }

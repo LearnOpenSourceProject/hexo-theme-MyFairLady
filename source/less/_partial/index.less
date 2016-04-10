@@ -16,13 +16,12 @@
         .article-header {
             text-align: left;
             a {
-                color: #212121;
-                font-weight: 900;
+                color:@article-entry-p;
             }
             .article-title {
-                font-size: @article-title-size;
+                font-size: @article-title-size - 5;
                 &:hover {
-                    text-decoration: underline;
+                    border-bottom: 2px solid @blog-main-color;
                 }
             }
         }

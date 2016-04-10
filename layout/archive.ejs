@@ -1,14 +1,14 @@
 <div class="con">
     <div class="tags-main">
         <header class="tags-title">
-            <h1>
-                # 归档页
-            </h1>
+            <span>
+                归档页
+            </span>
         </header>
         <div class="tags-entry">
             <ul>
                 <% page.posts.each(function(post){ %>
-                    <%- partial('_partial/archive',{post:post,index:true}) %>
+                    <%- partial('_partial/archive',{post:post}) %>
                 <% }) %>
             </ul>
             <%- partial('_partial/post/paginator') %>
