@@ -46,13 +46,16 @@
                 text-align: justify;
                 text-justify: distribute;
                 display: block;
-                font-family: Georgia;
+                font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
                 word-wrap: break-word;
                 line-height: @article-entry-p-lHeight + 2;//base
-                font-size: @article-entry-p-size;
+                font-size: @article-entry-p-size - 2;
                 font-weight: 600;
                 letter-spacing: 0.12px;
                 color: @article-entry-p;
+                a{
+                    color: @blog-main-color;
+                }
             }
         }
     }
