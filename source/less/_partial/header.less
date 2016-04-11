@@ -1,5 +1,3 @@
-@import "../color";
-@import "../font";
 .navHeader {
     text-align: center;
     .logo-link {
@@ -18,10 +16,7 @@
     }
 }
 .nav {
-    font-family: @blog-main-font;
     font-size: @blog-header-size;
-    position: relative;
-    left: 0.8rem;
     .nav-list-item {
         display: inline-block;
         font-size: @blog-header-size;
@@ -30,8 +25,12 @@
         padding: 9px 10px;
         a {
             color: @blog-main-color;
-            font-size: 20px;
-            // font-weight: 800;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: Courier;
+            &:hover {
+                color: @article-entry-p;
+            }
         }
         &:hover {
             text-decoration: underline;

@@ -1,6 +1,3 @@
-@import "../color";
-@import "../base";
-@import "../font";
 header {
     color: @blog-main-color;
 }
@@ -8,11 +5,11 @@ header {
     margin-top: 3%;
 }
 .container {
-    font-family: @blog-main-font;
+    font-family: Courier;
     margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
-    padding: 0 5%;
+    padding: 0 20%;
     h1,
     h2,
     h3,
@@ -20,37 +17,35 @@ header {
     h5,
     h6 {
         text-align: left;
+        font-size: 22px;
     }
-    .aboutHeader {
-        height: auto;
-    }
-    .about-title {
-        font-size: @article-title-size - 2px;
-    }
-    .about-main {
-        font-size: @article-title-size - 13px;
-        > * {
-            padding-bottom: 20px;
-        }
-    }
-    .aboutInformation {
-        a {
-            color: @blog-main-color;
-            font-weight: 900;
-        }
-    }
-    .aboutData {
+}
+.about-title {
+    font-size: @article-title-size - 8px;
+}
+.about-main {
+    font-size: @article-title-size - 13px;
+    > * {
         padding-bottom: 20px;
     }
-    .List {
-        text-align: left;
-        padding-left: 36px;
-        li {
-            margin: 11.2px 0;
-        }
-        a:hover {
-            text-decoration: underline;
-            font-weight: 800;
-        }
+}
+.aboutInformation {
+    a {
+        color: @blog-main-color;
+        font-weight: 900;
+    }
+}
+.aboutData {
+    padding-bottom: 20px;
+}
+.List {
+    text-align: left;
+    padding-left: 36px;
+    li {
+        margin: 11.2px 0;
+    }
+    a:hover {
+        border-bottom: 2px solid @blog-main-color;
+        font-weight: 800;
     }
 }

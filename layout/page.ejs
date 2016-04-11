@@ -2,26 +2,26 @@
     <div class="about-main">
         <header class="aboutHeader">
             <h1 itemprop="name" class="about-title">
-                <%- '# '+theme.header.aboutHeader %>
+                <%- theme.header.aboutHeader %>
         </h1>
         </header>
         <div class="about-main">
             <header class="aboutData">
                 <h2>
-                <%- '# '+theme.header.aboutData %>
+                <%- theme.header.aboutData %>
             </h2>
             </header>
             <div class="aboutName">
                 <ul class="List">
                     <% for (var i in theme.data){ %>
                         <li>
-                            <%=theme.data[i] %>
+                            <a href="javascript:;"><%=theme.data[i] %></a>
                         </li>
                         <% } %>
                 </ul>
             </div>
             <header>
-                <h2><%- '# '+theme.header.aboutInformation %></h2>
+                <h2><%- theme.header.aboutInformation %></h2>
             </header>
             <div class="aboutInformation">
                 <ul class="List">
@@ -36,7 +36,7 @@
                 </ul>
             </div>
             <header>
-                <h2><%- '# '+theme.header.aboutTarget %></h2>
+                <h2><%- theme.header.aboutTarget %></h2>
             </header>
             <div class="aboutTarget">
                 <ul class="List">
@@ -50,7 +50,7 @@
                 </ul>
             </div>
             <header>
-                <h2><%- '# '+theme.header.aboutFriendlink %></h2>
+                <h2><%- theme.header.aboutFriendlink %></h2>
             </header>
             <div class="aboutFriendLink">
                 <ul class="List">
