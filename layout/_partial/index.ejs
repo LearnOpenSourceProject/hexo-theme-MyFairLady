@@ -25,15 +25,14 @@
                                     <% } else { %>
                                     <%- post.content %>
                                     <% } %>
-                                    <p class="article-more-link">
-                                        <a href="<%- url_for(post.path) %>#more">
-                                            <%= theme.excerpt_link %>>
-                                        </a>
-                                    </p>
                                 </div>
+                                <p class="article-more-link">
+                                    <a href="<%- url_for(post.path) %>#more">
+                                        <%= theme.excerpt_link %>>
+                                    </a>
+                                </p>
                             </div>
             </article>
-            <span class="lineStyle"></span>
             <% }) %>
                 <%- partial('post/paginator') %>
     </div>
