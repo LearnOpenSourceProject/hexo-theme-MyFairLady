@@ -1,159 +1,131 @@
-.article-entry .highlight,
-.article-entry pre {
-    background: #f7f7f7;
-    margin: 10px 0;
-    padding: 10px;
+@highlight-background: #f7f7f7;
+@highlight-current-line: #efefef;
+@highlight-selection: #d6d6d6;
+@highlight-foreground: #4d4d4c;
+@highlight-comment: #8e908c;
+@highlight-red: #c82829;
+@highlight-orange: #f5871f;
+@highlight-yellow: #eab700;
+@highlight-green: #718c00;
+@highlight-aqua: #3e999f;
+@highlight-blue: #4271ae;
+@highlight-purple: #8959a8;
+.highlight,
+pre {
     overflow: auto;
-    color: #fff;
-    border-radius: 4px;
-    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 13px;
+    color: @highlight-foreground;
+    background: @highlight-background;
+    line-height: 1.6;
     text-align: justify;
     text-justify: distribute;
     display: block;
 }
-.article-entry .gist .gist-file .gist-data .line-numbers,
-.article-entry .highlight .gutter pre {
-    color: #666;
+code,
+pre {
+    font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
-.article-entry code,
-.article-entry pre {
-    font-family: "Segoe UI", "Lucida Grande", Helvetica, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+code {
+    padding: 2px 4px;
+    word-break: break-all;
+    color: #4d4d4c;
+    background: #eee;
+    border-radius: 4px;
+    font-size: 13px;
 }
-.article-entry pre {
-    color: #000;
-}
-.article-entry pre code {
+pre code {
+    padding: 0;
+    color: @highlight-foreground;
     background: none;
     text-shadow: none;
-    padding: 0;
-    color: #000;
 }
-.article-entry .highlight pre {
+.highlight pre {
     border: none;
     margin: 0;
-    padding: 0;
+    padding: 1px;
 }
-.article-entry .highlight table {
+.highlight table {
     margin: 0;
     width: auto;
+    border: none;
 }
-.article-entry .highlight td {
+.highlight td {
     border: none;
     padding: 0;
 }
-.article-entry .highlight figcaption {
+.highlight figcaption {
     font-size: 0.85em;
-    color: highlight-comment;
+    color: @highlight-comment;
     line-height: 1em;
     margin-bottom: 1em;
 }
-.article-entry .highlight figcaption a {
+.highlight figcaption a {
     float: right;
 }
-.article-entry .highlight .gutter pre {
+.highlight .gutter pre {
+    color: #666;
     text-align: right;
     padding-right: 20px;
 }
-.article-entry .highlight .gutter pre .line {
-    text-shadow: none;
-}
-.article-entry .highlight .line {
-    font-size: 15px;
-    height: 15px;
-}
-.article-entry .gist {
-    border-style: solid;
-    border-color: color-border;
-    border-width: 1px 0;
-    background: #242424;
-    padding: 15px article-padding 15px 0;
-}
-.article-entry .gist .gist-file {
-    border: none;
-    font-family: font-mono;
-    margin: 0;
-}
-.article-entry .gist .gist-file .gist-data {
-    background: none;
-    border: none;
-}
-.article-entry .gist .gist-file .gist-data .line-numbers {
-    background: none;
-    border: none;
-    padding: 0 20px 0 0;
-}
-.article-entry .gist .gist-file .gist-data .line-data {
-    padding: 0 !important;
-}
-.article-entry .gist .gist-file .highlight {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-.article-entry .gist .gist-file .gist-meta {
-    background: #242424;
-    color: highlight-comment;
-    font: 0.85em font-sans;
-    text-shadow: 0 0;
-    padding: 0;
-    margin-top: 1em;
-    margin-left: article-padding;
-}
-.article-entry .gist .gist-file .gist-meta a {
-    color: @blog-main-color;
-    font-weight: normal;
-}
-.article-entry .gist .gist-file .gist-meta a:hover {
-    text-decoration: underline;
-}
-.article-entry figure {
-    text-align: justify;
-    text-justify: distribute;
-}
-.article-entry blockquote {
-    background-color: #f5f8fa;
-    padding: 10px 15px;
-    word-break: break-word;
-    border-left: 5px solid @blog-main-color;
-    margin: 10px 0 0;
+.highlight .line {
+    height: 20px;
 }
 pre .comment {
-    color: #75715e;
-}
-pre .class .params,
-pre .function .keyword,
-pre .keyword {
-    color: #f02ce2;
-}
-pre .doctype,
-pre .function,
-pre .params,
-pre .tag {
-    color: #f5000f;
-}
-pre .at_rule,
-pre .at_rule .keyword,
-pre .css ~ * .tag,
-pre .preprocessor,
-pre .preprocessor .keyword,
-pre .title {
-    color: #f92672;
+    color: @highlight-comment;
 }
 pre .attribute,
+pre .css .class,
+pre .css .id,
+pre .css .pseudo,
+pre .html .doctype,
+pre .regexp,
+pre .ruby .constant,
+pre .tag,
+pre .variable,
+pre .xml .doctype,
+pre .xml .pi,
+pre .xml .tag .title {
+    color: @highlight-red;
+}
 pre .built_in,
-pre .class,
-pre .css ~ * .class,
-pre .function .title {
-    color: #00a82a;
+pre .command,
+pre .constant,
+pre .literal,
+pre .number,
+pre .params,
+pre .preprocessor {
+    color: @highlight-orange;
 }
+pre .css .rules .attribute,
+pre .formula,
+pre .header,
+pre .inheritance,
+pre .number,
+pre .ruby .class .title,
+pre .ruby .symbol,
+pre .special,
 pre .string,
-pre .value {
-    color: #030dff;
+pre .value,
+pre .xml .cdata {
+    color: @highlight-green;
 }
-pre .number {
-    color: #7163d7;
+pre .css .hexcolor,
+pre .title {
+    color: @highlight-aqua;
 }
-pre .css ~ * .id,
-pre .id {
-    color: #fd971f;
+pre .coffeescript .title,
+pre .function,
+pre .javascript .title,
+pre .perl .sub,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword {
+    color: @highlight-blue;
+}
+pre .javascript .function,
+pre .keyword {
+    color: @highlight-purple;
 }
