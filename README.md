@@ -10,8 +10,8 @@
 
 ### document
 
-* [中文文档](https://github.com/yzzting/hexo-theme-MyFairLady/doc/README-zh.md)
-* [document]((https://github.com/yzzting/hexo-theme-MyFairLady/doc/README-en.md)
+* [中文文档](https://github.com/yzzting/hexo-theme-MyFairLady/blob/master/doc/README-zh.md)
+* [document](https://github.com/yzzting/hexo-theme-MyFairLady/blob/master/doc/README-en.md)
 
 ### Installation
 
