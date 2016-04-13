@@ -1,11 +1,17 @@
 ## hexo-theme-MyFairLady
 
+![](http://7xp1k3.com1.z0.glb.clouddn.com/MyFairLady.png?imageView/3/w/600)
+
 **Live:** [yzz blog](http://www.yzz1995.cn)
+
+如果你想看看移动端的效果，请扫一下下面的二维码
+
+![](http://7xp1k3.com1.z0.glb.clouddn.com/website.png)
 
 ### document
 
-* [中文文档](http://www.yzz1995.cn/2016/03/20/%E8%AE%BE%E8%AE%A1hexo%E4%B8%BB%E9%A2%98/)
-* document
+* [中文文档](https://github.com/yzzting/hexo-theme-MyFairLady/doc/README-zh.md)
+* [document]((https://github.com/yzzting/hexo-theme-MyFairLady/doc/README-en.md)
 
 ### Installation
 
@@ -18,51 +24,6 @@ Then update your blog's main **_config.yml** to set the theme to MyFairLady
     ## Themes: http://hexo.io/themes/
     theme: MyFairLady
 
-### Main configuration
+### Contact
 
-#### Menu
-
-    menu:
-        home: /
-        about me : /about
-        archives: /archives
-
-####  The number of articles
-
-Find your blog's main **_config.yml**  ``` per_page ```
-
-Modify the value of per_page to change the number of articles on each page
-
-    # Pagination
-    ## Set per_page to 0 to disable pagination
-    per_page: 5
-
-#### Analytics
-
-In  **theme/MyFairLady/_config.yml**
-
-Fill in your Google or Baidu Analytics Tracking ID Default Google
-
-    # Baidu Analytics
-    # baidu_analytics: c21994907883f37ffd80e13627dd4faa
-
-    # Google Analytics
-    google_analytics: UA-75314797-1
-
-#### Socially
-
-In  **theme/MyFairLady/_config.yml**
-
-    # SubNav
-    subnav:
-        gitHub: "https://github.com/yzzting"
-        weiBo: "http://weibo.com/yzzting"
-        zhiHu: "https://www.zhihu.com/people/yang-zi-zi-1995"
-
-### About
-
-This theme pink tones, with simple white and pink looks more concise and clear So I borrowed the name of a movie, which was named as My Fair Lady
-
-We are very welcome to put forward valuable suggestions.I will accept and correct
-
-I hope you can give a little encouragement OF star this theme  
+Email:[yzz1995@aliyun.com](mailto:yzz1995@aliyun.com)
