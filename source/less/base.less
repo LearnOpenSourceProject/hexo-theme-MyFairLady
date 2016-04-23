@@ -7,43 +7,34 @@ a {
     font-family: "Segoe UI Emoji";
     color: @black;
     cursor: auto;
+    transition-duration: 0.5s;
 }
 ul {
     list-style: none;
 }
-html{
-    height: 100%;
+html {
+    background: #f7f7f7;
 }
 body {
-    height: 100%;
-    background:  #f7f7f7;
+    background: @white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100%;
 }
 .mian{
-    background: @white;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    width: 80%;
-    // height: 101%;
-    margin: 0 auto;
+    overflow: hidden;
 }
-
-
-del{
+del {
     color: @blog-main-color;
 }
-
 @blog-main-width: 1160px;
-
 @blog-header-height: 21px;
-
-@more-link-width: 90px;
-//about
+@more-link-width: 90px; //about
 @aboutWidth: 80%;
-@aboutMaxWidth: 710px;
-//article
-@article-main-height:215px;
-@article-entry-p-lHeight: 31.5px;
-//posts-link
-@posts-link-height:35px;
-@posts-link-width:120px;
-//nav
-@article-nav-title-height:29px;
+@aboutMaxWidth: 710px; //article
+@article-main-height: 215px;
+@article-entry-p-lHeight: 31.5px; //posts-link
+@posts-link-height: 35px;
+@posts-link-width: 120px; //nav
+@article-nav-title-height: 29px;
