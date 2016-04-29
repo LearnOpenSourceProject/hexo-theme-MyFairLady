@@ -5,8 +5,9 @@ header {
     margin-top: 3%;
 }
 .container {
-    font-family: Courier;
-    margin: 0 auto;    
+    font-family: decay;
+    font-weight: normal;
+    margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
     padding: 0% 20%;
@@ -17,7 +18,11 @@ header {
     h5,
     h6 {
         text-align: left;
-        font-size: 22px;
+        font-size: 15px;
+        transition-duration: 0.5s;
+        &:hover {
+            color: @article-entry-p;
+        }
     }
 }
 .about-title {
