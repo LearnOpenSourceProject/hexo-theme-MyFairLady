@@ -1,17 +1,15 @@
 .navHeader {
     text-align: center;
     .logo-link {
-        font-size: @article-title-size - 10;
         display: inline-block;
         padding-top: 5%;
         a {
-            font-family: Lucida Grande;
-            color: @white;
-            background: @blog-main-color;
-            height: 2.5rem;
-            line-height: 2.5rem;
-            padding: 0 2rem;
-            display: inline-block;
+            font-family: decay;
+            color: @blog-main-color;
+            font-size: 3rem;
+            &:hover {
+                color: @article-entry-p;
+            }
         }
     }
 }
@@ -25,15 +23,11 @@
         padding: 2%;
         a {
             color: @blog-main-color;
-            font-size: 22px;
-            font-weight: 600;
-            font-family: Courier;
+            font-size: 14px;
+            font-family: decay;
             &:hover {
                 color: @article-entry-p;
             }
-        }
-        &:hover {
-            text-decoration: underline;
         }
     }
 }
