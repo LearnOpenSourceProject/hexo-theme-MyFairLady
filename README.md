@@ -1,6 +1,6 @@
 ## hexo-theme-MyFairLady
 
-![](http://7xp1k3.com1.z0.glb.clouddn.com/MyFairLady.png?imageView/3/w/600)
+![](http://7xp1k3.com1.z0.glb.clouddn.com/%E4%B8%8B%E8%BD%BD.png)
 
 **Live:** [yzz blog](http://www.yzz1995.cn)
 
