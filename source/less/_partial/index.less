@@ -18,6 +18,7 @@
                 font-size: @article-title-size - 5;
                 &:hover {
                     border-bottom: 2px solid @blog-main-color;
+                    color: @blog-main-color;
                 }
             }
         }
@@ -36,9 +37,11 @@
                 text-align: left;
                 margin-bottom: 10px;
                 color: @title-a-color;
-                ::before{
+                &::before{
                     content: "#";
                     color:@blog-main-color;
+                }
+                &:hover{
                 }
             }
             p {
