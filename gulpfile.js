@@ -1,16 +1,16 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var cssmin = require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer')
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 gulp.task('less', function() {
     gulp.src(['source/less/main.less'])
         .pipe(less())
         .pipe(cssmin())
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(postcss([autoprefixer({
+            browsers: ['last 2 versions']
+        })]))
         .pipe(gulp.dest('./source/css'));
 });
 gulp.task('default', ['less'], function() {
