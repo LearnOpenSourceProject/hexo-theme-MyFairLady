@@ -18,7 +18,7 @@
         about : /about
         archives: /archives
 
-这个是header里面三个选项，如果要添加的话，在目录下的 source 下创建 一个你想要添加的选项，例如**xx.md**里面填入        
+这个是header里面三个选项，如果要添加的话，在目录下的 source 下创建 一个你想要添加的选项名称的文件夹，然后在里面new一个例如**xx.md**在里面填入        
 
     ---
     layout: xxx
