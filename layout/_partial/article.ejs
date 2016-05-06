@@ -17,7 +17,12 @@
                     <%- partial('_partial/post/nav') %>
                 </div>
             </div>
-            <%- partial('_partial/comments/disqus.ejs') %>
+            <% if(theme.disqus){ %>
+                <%- partial('_partial/comments/disqus.ejs') %>
+            <% } %>
+            <% if (theme.duoshuo){%>
+                <%- partial('_partial/comments/duoshuo.ejs') %>
+            <% } %>
         </div>
     </article>
     <% } %>
