@@ -6,18 +6,16 @@ menu:
     about : /about
     tags : /tags
     archives: /archives
+# Info
+info: writing an About me page today?
 # title
 header:
-    aboutHeader: About
-    aboutData: Information
+    aboutHeader: Chat
     aboutInformation: Social
     aboutTarget: Project
     aboutFriendlink: Talent
-# author date
-data:
-    name: 杨挺or杨滋滋
-    school: 本科/广东东软学院
-    position: 前端工程师
+# author chat
+chat: 杨滋滋的生活得有代码音乐，还有远方的人
 # SubNav
 subnav:
     gitHub: "https://github.com/yzzting"
