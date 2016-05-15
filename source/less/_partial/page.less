@@ -2,16 +2,14 @@
     margin: 0 auto;
     width: 60%;
     background: @white;
-    padding: 2%;
+    padding: 3.5%;
+    display: flex;
+    justify-content: center;
 }
 .about-header{
-    blockquote{
-         background: @white;
-        p{
-            font-family: cathsgbr;
-            font-size: 28px;
-            font-style: italic;
-        }
+    img{
+        width: 90%;
+        margin: 0 auto;
     }
 }
 .about-body{
@@ -22,12 +20,22 @@
         color: @blog-main-color;
         font-size: 28px;
         font-family: cathsgbr;
-        padding: 1%;
+        padding: 2%;
+        margin: 2% 0;
+        line-height: 28px;
         &:hover {
             color: @article-entry-p;
         }
     }
     .about-show{
-
+        .List{
+            li {
+                a {
+                    &:hover {
+                        color: @blog-main-color;
+                    }
+                }
+            }
+        }
     }
 }
