@@ -1,5 +1,6 @@
 (function() {
     var htmlHeight = document.getElementsByTagName('html')[0];
+    var footer = document.getElementById('blog-footer');
     var pageHeight = window.innerHeight;
     if (typeof pageHeight != 'number') {
         if (document.compatMode == 'CSS1compat') {
@@ -8,7 +9,5 @@
             pageHeight = document.body.clientHeight;
         }
     }
-    htmlHeight.style.height = pageHeight + 'px';
-    console.log(pageHeight);
-    console.log(htmlHeight.style.height);
+    footer.style.top =  window.screenTop+"px";
 })()
