@@ -2,10 +2,10 @@
 title: Yzz
 # Header
 menu:
-    home: /
-    about : /about
-    tags : /tags
-    archives: /archives
+    主页 : /
+    关于 : /about
+    分类 : /tags
+    归档 : /archives
 # Info
 info: writing an About me page today?
 # title
@@ -30,7 +30,7 @@ friendlink:
     刘帆帆的博客: http://henbukexue.science
 
 # read more
-excerpt_link: read more
+excerpt_link: ...continue reading
 
 # favicon
 favicon: http://7xp1k3.com1.z0.glb.clouddn.com/octocat-de-los-muertos.jpg
