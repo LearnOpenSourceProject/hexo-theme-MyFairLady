@@ -7,27 +7,16 @@
         padding: 0;
         width: 95%;
     }
-    .article-main {
-        padding: 0 4%;
-        .article-title {
-            font-size: 18px;
+    .article-main .article-entry {
+        p {
+            font-size: 14px;
+            line-height: 23.5px;
         }
-        .article-entry {
-            p {
-                font-size: 14px;
-                line-height: 24px;
-            }
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-size: 16px;
-            }
+        h1,h2,h3,h4,h5,h6 {
+            font-size: 14px;
         }
     }
-    .blog-title{
+    .blog-title {
         margin-top: 20%;
     }
     .navHeader {
@@ -38,6 +27,12 @@
     }
     .archives-main {
         padding: 0 2%;
+        display: block;
+        width: 95%;
+        .photo-header img {
+            width: 98%;
+            margin: 0 auto;
+        }
         ul {
             width: 100%;
         }
@@ -56,9 +51,6 @@
             }
         }
     }
-    .articlepad {
-        width: auto;
-    }
     .older-posts-link {
         a {
             font-size: 18px;
@@ -68,23 +60,23 @@
         display: block;
     }
     .sidebar {
-      position: fixed;
-      background-color: #f9f9f9;
-      width: 100%;
-      height: 140px;
-      top: 39px;
-      left: 0;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      box-sizing: border-box;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
-      -webkit-transform: translate(0, -200px);
-      transform: translate(0, -200px);
+        position: fixed;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 140px;
+        top: 39px;
+        left: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        box-sizing: border-box;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+        -webkit-transform: translate(0, -200px);
+        transform: translate(0, -200px);
     }
     .sidebar .main-menu {
-      display: block;
+        display: block;
     }
     .sidebar.open {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }

@@ -3,9 +3,11 @@
     overflow: hidden;
     padding: 1em 0 2em;
     border-bottom: 1px solid #ddd;
+    max-width: 600px;
+    margin: 0 auto;
     .article-header {
         text-align: left;
-        margin-bottom: 1%;
+        margin: 0.8em 0;       
         a {
             color: @article-entry-p;
         }
@@ -23,7 +25,7 @@
             right: 50%;
             bottom: 0;
             background: @blog-main-color;
-            height: 4px;
+            height: 2px;
             transition-property: left, right;
             transition-duration: 0.3s;
             transition-timing-function: ease-out;
@@ -53,12 +55,11 @@
             text-align: left;
             margin-bottom: 10px;
             color: @title-a-color;
-            font-size: 20px;
+            font-size: 16px;
             &::before {
                 content: "#";
                 color: @blog-main-color;
             }
-            &:hover {}
         }
         p {
             text-align: justify;
@@ -67,7 +68,7 @@
             font-family: "Lucida Grande", "Microsoft JhengHei", "Microsoft YaHei";
             word-wrap: break-word;
             line-height: @article-entry-p-lHeight + 2; //base
-            font-size: @article-entry-p-size -2;
+            font-size: @article-entry-p-size - 2;
             letter-spacing: 0.12px;
             color: @article-entry-p;
             a {
@@ -75,13 +76,6 @@
             }
         }
     }
-}
-.articlepad{
-    width: 70%;
-    margin: 0 auto;
-    background: @white;
-    padding: 2%;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 .articleCon{
     padding: 0 2%;

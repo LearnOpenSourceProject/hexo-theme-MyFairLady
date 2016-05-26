@@ -1,20 +1,25 @@
 <div class="archives-main">
-    <ul>
-        <% var year = 0; %>
+    <div class="photo-header">
+        <img src="http://7xp1k3.com1.z0.glb.clouddn.com/208_1.jpg" alt="photo">
+    </div>
+    <div class="archives-body">
+        <ul>
+            <% var year = 0; %>
             <% change = false %>
-                <% page.posts.each(function(item){ %>
-                    <% var itemYear = date(item.date, 'YYYY') - 0; %>
-                        <% change = year !== itemYear; %>
-                            <% year = change ? itemYear : year %>
-                                <% if (change) { %>
-                                    <h2 class="archives-title"><%=year%></h2>
-                                    <% } %>
-                                        <li class="archives-entry">
-                                            <%=full_date(item.date, 'MMM D') %>
-                                                <a href="<%- url_for(item.path) %>">
-                                                    <%-item.title %>
-                                                </a>
-                                        </li>
-                                        <% }) %>
-    </ul>
+            <% page.posts.each(function(item){ %>
+            <% var itemYear = date(item.date, 'YYYY') - 0; %>
+            <% change = year !== itemYear; %>
+            <% year = change ? itemYear : year %>
+            <% if (change) { %>
+                <h2 class="archives-title"><%=year%></h2>
+            <% } %>
+            <li class="archives-entry">
+            <%=full_date(item.date, 'MMM D') %>
+                <a href="<%- url_for(item.path) %>">
+                    <%-item.title %>
+                </a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
 </div>
