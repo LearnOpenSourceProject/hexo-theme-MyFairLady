@@ -1,11 +1,12 @@
+<%- partial('post/sidebar') %>
     <div class="blog-main">
         <% page.posts.each(function(post){ %>
           <div class="shadow">
               <article class="article-main">
                       <header class="article-header">
                           <h1 itemprop="name">
-                          <a href="<%- url_for(post.path) %>" class="article-title"><%- post.title %></a>
-                      </h1>
+                              <a href="<%- url_for(post.path) %>" class="article-title"><%- post.title %></a>
+                          </h1>
                       </header>
                       <%if(post.noDate != "true"){%>
                           <div class="article-meta">

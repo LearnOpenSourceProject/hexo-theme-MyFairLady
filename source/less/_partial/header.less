@@ -1,15 +1,17 @@
 .navHeader {
-    text-align: center;
+    position: relative;
     background: @white;
     margin-bottom: 2%;
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    padding: 25px 60px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+    z-index: 2;
     .logo-link {
+        line-height: 40px;
         display: inline-block;
-        padding-top: 1.55%;
         a {
             font-family: cathsgbr;
             color: @blog-main-color;
-            font-size: 5rem;
+            font-size: 3rem;
             &:hover {
                 color: @article-entry-p;
             }
@@ -17,21 +19,60 @@
     }
 }
 .nav {
+    position: absolute;
+    right: 60px;
+    top: 20px;
     font-size: @blog-header-size;
+    height: 60px;
+    line-height: 60px;
     .nav-list-item {
         display: inline-block;
-        font-size: @blog-header-size;
         cursor: auto;
         text-transform: capitalize;
-        padding: 1%;
+        position: relative;
+        margin: 0 0.6em;
         a {
             color: @blog-main-color;
-            font-size: 36px;
+            font-size: 26px;
             font-family: cathsgbr;
             font-weight: 800;
             &:hover {
                 color: @article-entry-p;
             }
         }
+    }
+}
+#mobile-bar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    z-index: 9;
+    display: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+    .menu-button {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 8px;
+        left: 12px;
+        background: url("../images/menu.png") center center no-repeat;
+        background-size: 24px;
+    }
+    .logo {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: url("../images/logo.png") center center no-repeat;
+        top: 5px;
+        left: 50%;
+        margin-left: -15px;
+        background-size: 30px;
+        font-family: cathsgbr;
+        color:@blog-main-color;
+        font-size: 20px;
     }
 }

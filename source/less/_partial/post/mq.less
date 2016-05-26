@@ -1,4 +1,4 @@
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
     body {
         width: 100%;
     }
@@ -34,18 +34,7 @@
         }
     }
     .navHeader {
-        .logo-link {
-            a {
-                font-size: 3rem;
-            }
-        }
-    }
-    header {
-        .nav .nav-list-item {
-            a {
-                font-size: 20px;
-            }
-        }
+        display: none;
     }
     #heart {
         display: none;
@@ -77,5 +66,28 @@
         a {
             font-size: 18px;
         }
+    }
+    #mobile-bar {
+        display: block;
+    }
+    .sidebar {
+      position: fixed;
+      background-color: #f9f9f9;
+      width: 100%;
+      height: 130px;
+      top: 39px;
+      left: 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-sizing: border-box;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+      -webkit-transform: translate(0, -190px);
+      transform: translate(0, -190px);
+    }
+    .sidebar .main-menu {
+      display: block;
+    }
+    .sidebar.open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
     }
 }
