@@ -4,31 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        <% if (title) { %>
-            <%= title %> | <% } %><%= config.title %>
-    </title>
-    <%
-      var title = page.title;
+    <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
+        <%
+          var title = page.title;
 
-      if (is_archive()){
-        title = 'Archives';
+          if (is_archive()){
+            title = 'Archives';
 
-        if (is_month()){
-          title += ': ' + page.year + '/' + page.month;
-        } else if (is_year()){
-          title += ': ' + page.year;
-        }
-      } else if (is_category()){
-        title = 'Category: ' + page.category;
-      } else if (is_tag()){
-        title = 'Tag: ' + page.tag;
-      }
-     %>
+            if (is_month()){
+              title += ': ' + page.year + '/' + page.month;
+            } else if (is_year()){
+              title += ': ' + page.year;
+            }
+          } else if (is_category()){
+            title = 'Category: ' + page.category;
+          } else if (is_tag()){
+            title = 'Tag: ' + page.tag;
+          }
+         %>
         <!-- 主css -->
         <link rel="stylesheet" href="/css/main.css">
         <!-- seo -->
-        <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+            <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
             <!-- facicon -->
         <% if (theme.favicon) { %>
         <link rel="icon" href="<%- theme.favicon %>">
