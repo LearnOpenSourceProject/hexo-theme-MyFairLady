@@ -2,7 +2,7 @@
 
 ![](http://7xp1k3.com1.z0.glb.clouddn.com/screen.png)
 
-**Live:** [yzz blogf](http://www.yzz1995.cn)
+**Live:** [yzz blog](http://www.yzz1995.cn)
 
 如果你想看看移动端的效果，请扫一下下面的二维码
 
