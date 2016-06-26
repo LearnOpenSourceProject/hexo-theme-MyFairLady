@@ -1,16 +1,16 @@
 .navHeader {
     position: relative;
-    padding: 25px 60px;
+    padding: 1.56em 3.75em;
     z-index: 2;
     background-color: #fff;
     box-shadow: 0 0 4px rgba(0,0,0,0.25);
     .logo-link {
-        line-height: 40px;
+        line-height: 1;
         display: inline-block;
         a {
             font-family: cathsgbr;
             color: @blog-main-color;
-            font-size: 3rem;
+            font-size: @logo-link-size;
             &:hover {
                 color: @article-entry-p;
             }
@@ -21,9 +21,7 @@
     position: absolute;
     right: 60px;
     top: 20px;
-    font-size: @blog-header-size;
-    height: 60px;
-    line-height: 60px;
+    line-height: 3;
     .nav-list-item {
         display: inline-block;
         cursor: auto;
@@ -32,7 +30,7 @@
         margin: 0 0.6em;
         a {
             color: @blog-main-color;
-            font-size: 18px;
+            font-size: @nav-item-size;
             font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
             &:hover {
                 color: @article-entry-p;
@@ -46,26 +44,25 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 2.5em;
     background-color: #fff;
     z-index: 9;
     display: none;
     box-shadow: 0 0 4px rgba(0,0,0,0.25);
     .menu-button {
         position: absolute;
-        width: 24px;
-        height: 24px;
+        width: 1.5em;
+        height: 1.5em;
         top: 8px;
         left: 12px;
         background: url("../images/menu.png") center center no-repeat;
-        background-size: 24px;
+        background-size: 1.5em;
     }
     .logo {
         position: absolute;
         width: 30px;
         height: 30px;
         line-height: 30px;
-        background: url("../images/logo.png") center center no-repeat;
         top: 5px;
         left: 50%;
         margin-left: -15px;
