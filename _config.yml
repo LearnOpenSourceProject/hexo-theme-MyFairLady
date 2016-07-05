@@ -6,14 +6,10 @@ menu:
     关于 : /about
     分类 : /tags
     归档 : /archives
-    生活 : /photo
-# Info
-info: writing an About me page today?
 # title
 header:
     aboutHeader: Chat
     aboutInformation: Social
-    aboutTarget: Project
     aboutFriendlink: Talent
 # author chat
 chat: 杨滋滋的生活得有代码音乐，还有远方的人
@@ -45,5 +41,3 @@ google_analytics: UA-75314797-1
 # comments
 disqus: yzzting
 # duoshuo: yzzting
-
-photo: 20
