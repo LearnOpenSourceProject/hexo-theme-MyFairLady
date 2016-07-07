@@ -3,20 +3,18 @@
     <a class="logo" href="/"><%= theme.title %></a>
 </div>
 <header class="navHeader">
-    <span class="logo-link">
-        <a href="/"><%= theme.title %></a>
-    </span>
-        <% var first = true
-            for(var i in theme.menu) { %>
-                <% if (first) { %>
-        <ul class="nav nav-list">
-            <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-            <% first = false %>
-                <% } else { %>
-            <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-                <% } %>
+    <a href="/" class="logo-link"><%=theme.title%></a>
+    <% var first = true
+        for(var i in theme.menu) { %>
+            <% if (first) { %>
+    <ul class="nav nav-list">
+        <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+        <% first = false %>
+            <% } else { %>
+        <li class="nav-list-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
             <% } %>
-        </ul>
+        <% } %>
+    </ul>
 </header>
 <%- partial('post/sidebar') %>
 <h1 class="blog-title">The <%= theme.title %> Blog</h1>

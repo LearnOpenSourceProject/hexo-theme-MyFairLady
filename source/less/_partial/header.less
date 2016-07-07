@@ -7,11 +7,10 @@
     .logo-link {
         line-height: 1;
         display: inline-block;
-        a {
-            font-family: cathsgbr;
-            color: @blog-main-color;
-            font-size: @logo-link-size;
-        }
+        font-family: cathsgbr;
+        color: @blog-main-color;
+        font-size: @logo-link-size;
+        cursor: pointer;
     }
 }
 .nav {
@@ -21,14 +20,13 @@
     line-height: 3;
     .nav-list-item {
         display: inline-block;
-        cursor: auto;
         text-transform: capitalize;
         position: relative;
         margin: 0 0.6em;
         a {
+            cursor: pointer;
             color: @blog-main-color;
             font-size: @nav-item-size;
-            font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
             &:hover {
                 text-shadow: 0 0 .1em @blog-main-color, 0 0 .3em @blog-main-color;
             }
