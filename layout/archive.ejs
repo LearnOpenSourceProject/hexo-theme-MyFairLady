@@ -1,6 +1,6 @@
 <div class="archives-main">
     <div class="photo-header">
-        <img src="http://7xp1k3.com1.z0.glb.clouddn.com/208_1.jpg" alt="photo">
+        <img src="<%=theme.archivePhoto%>" alt="photo">
     </div>
     <div class="archives-body">
         <ul>
@@ -14,7 +14,7 @@
                 <h2 class="archives-title"><%=year%></h2>
             <% } %>
             <li class="archives-entry">
-            <%=full_date(item.date, 'MMM D') %>
+            <%=full_date(item.date, 'MMM Do') %>
                 <a href="<%- url_for(item.path) %>">
                     <%-item.title %>
                 </a>
