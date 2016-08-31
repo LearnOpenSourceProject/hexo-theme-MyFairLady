@@ -1,0 +1,30 @@
+* {
+  margin:0;
+  padding: 0;
+  transition-duration:0.5s;
+}
+
+a {
+  cursor:auto;
+  text-decoration:none;
+  color:rgba(0, 0, 0, 0.82);
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  margin:0 auto;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+del {
+  color:$blog-main-color;
+}
+
+.main {
+  flex: 1;
+}

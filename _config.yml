@@ -16,11 +16,7 @@ chat: 杨滋滋的生活得有代码音乐，还有远方的人
 # SubNav
 subnav:
     gitHub: "https://github.com/yzzting"
-    # weiBo: "http://weibo.com/yzzting"
     zhiHu: "https://www.zhihu.com/people/yang-zi-zi-1995"
-# Project
-project:
-    hexo主题: https://github.com/yzzting/hexo-theme-MyFairLady
 # friendlink
 friendlink:
     ahonn的博客: http://www.ahonn.me

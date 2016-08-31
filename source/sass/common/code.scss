@@ -1,0 +1,163 @@
+$code-background: #f7f7f7;
+$code-current-line: #efefef;
+$code-selection: #d6d6d6;
+$code-foreground: #4d4d4c;
+$code-comment: #8e908c;
+$code-red: #c82829;
+$code-orange: #f5871f;
+$code-yellow: #eab700;
+$code-green: #718c00;
+$code-aqua: #3e999f;
+$code-blue: #4271ae;
+$code-purple: #8959a8;
+$code-gutter: #666666;
+
+$code-margin: 20px 0;
+$code-padding: 15px;
+$code-fontSize: 13px;
+$code-lineHeight: 1.6;
+$code-fontFamily: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+$code-pre-padding: 0;
+
+$code-highlight-padding: 1px;
+$code-highlight-margin: 0;
+$code-highlight-fontSize: 0.85em;
+$code-highlight-lineHeight: 1em;
+$code-highlight-marginBottom: 1em;
+
+$code-border: 5px;
+$code-blockquote-background: rgba(182, 173, 173, 0.14);
+$code-blockquote-margin: 2% 0;
+$code-blockquote-padding: 1%;
+$code-blockquote-fontSize: 100%;
+
+$code-gutter-right: 20px;
+$code-line-height: 20px;
+@mixin code {
+    %code-block {
+        overflow: auto;
+        line-height: $code-lineHeight;
+        font-size: $code-fontSize;
+        background-color: $code-background;
+        text-align: justify;
+        display: block;
+    }
+    pre {
+        @extend %code-block;
+        font-family: $code-fontFamily;
+        padding: $code-pre-padding;
+        color: $code-foreground;
+        text-shadow: none;
+    }
+    blockquote {
+        border-left: $code-border solid $blog-main-color;
+        background: $code-blockquote-background;
+        padding: $code-blockquote-padding;
+        margin: $code-blockquote-margin;
+        font-size: $code-blockquote-fontSize;
+    }
+    .highlight {
+        @extend %code-block;
+        pre {
+            border: none;
+            margin: $code-highlight-margin;
+            padding: $code-highlight-padding;
+        }
+        table {
+            margin: $code-highlight-margin;
+            width: auto;
+            border: none;
+        }
+        td {
+            border: none;
+            padding: $code-highlight-padding;
+        }
+        figcaption {
+            font-size: $code-highlight-fontSize;
+            color: $code-comment;
+            line-height: $code-highlight-lineHeight;
+            margin-bottom: $code-highlight-marginBottom;
+            a {
+                float: right;
+            }
+        }
+        .gutter pre {
+            color: $code-gutter;
+            text-align: right;
+            padding-left: $code-gutter-right;
+        }
+        .line {
+            height: $code-line-height;
+        }
+    }
+    pre {
+        .comment {
+            color: $code-comment;
+        }
+        .attribute,
+        .constant,
+        .css .class .css,
+        .css .id,
+        .doctype,
+        .html,
+        .pi,
+        .pseudo,
+        .regexp,
+        .ruby,
+        .tag,
+        .tag,
+        .title,
+        .variable,
+        .xml {
+            color: $code-red;
+        }
+        .built_in,
+        .command,
+        .constant,
+        .literal,
+        .number,
+        .params,
+        .preprocessor {
+            color: $code-orange;
+        }
+        ,
+        .attribute,
+        .cdata,
+        .class,
+        .css,
+        .header,
+        .inheritance,
+        .number .formula,
+        .ruby,
+        .rules,
+        .special,
+        .string,
+        .symbol,
+        .title,
+        .value {
+            color: $code-green;
+        }
+        .css,
+        .hexcolor,
+        .title {
+            color: $code-aqua;
+        }
+        .coffeescript,
+        .decorator,
+        .function,
+        .javascript,
+        .keyword,
+        .perl,
+        .python,
+        .ruby,
+        .sub,
+        .title {
+            color: $code-blue;
+        }
+        .function,
+        .javascript,
+        .keyword {
+            color: $code-purple;
+        }
+    }
+}
