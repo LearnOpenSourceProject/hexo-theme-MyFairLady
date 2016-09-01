@@ -28,3 +28,8 @@ del {
 .main {
   flex: 1;
 }
+
+::selection {
+    background: $blog-main-color;
+    color: #fff;
+}

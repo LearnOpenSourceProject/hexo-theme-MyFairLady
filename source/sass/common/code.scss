@@ -1,16 +1,4 @@
-$code-background: #f7f7f7;
-$code-current-line: #efefef;
-$code-selection: #d6d6d6;
-$code-foreground: #4d4d4c;
-$code-comment: #8e908c;
-$code-red: #c82829;
-$code-orange: #f5871f;
-$code-yellow: #eab700;
-$code-green: #718c00;
-$code-aqua: #3e999f;
-$code-blue: #4271ae;
-$code-purple: #8959a8;
-$code-gutter: #666666;
+@import './highlight';
 
 $code-margin: 20px 0;
 $code-padding: 15px;
@@ -82,12 +70,8 @@ $code-line-height: 20px;
             }
         }
         .gutter pre {
-            color: $code-gutter;
             text-align: right;
             padding-left: $code-gutter-right;
-        }
-        .line {
-            height: $code-line-height;
         }
     }
     pre {

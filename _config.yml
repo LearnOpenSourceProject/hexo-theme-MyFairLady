@@ -42,3 +42,11 @@ disqus: yzzting
 aboutPhoto: http://7xp1k3.com1.z0.glb.clouddn.com/156_1.jpg
 tagPhoto: http://7xp1k3.com1.z0.glb.clouddn.com/83_1.jpg
 archivePhoto: http://7xp1k3.com1.z0.glb.clouddn.com/208_1.jpg
+
+# Blog main color
+# Default | Mint Green | Pale Denim | Hot Pink | Dark Violet
+blog-color: Hot Pink
+
+# Blog code theme
+# Default | Night | Eighties | Blue | Bright
+code-theme: Default

@@ -23,7 +23,7 @@ $article-p-fontSize: 95%;
 $article-p-fontFamily: Monda, "PingFang SC", "Microsoft YaHei", sans-serif;
 $article-p-lineHeight: 1.8;
 $article-p-letterSpacing: 0.12px;
-$article-p-color: rgb(93, 93, 93);
+$article-p-color: #34495e;
 
 @mixin article {
   .article-main{
@@ -36,7 +36,7 @@ $article-p-color: rgb(93, 93, 93);
       text-align:left;
       margin: $article-header-margin;
       a{
-        color:$article-header-color;
+        color:$article-p-color;
       }
     }
     .article-title {
