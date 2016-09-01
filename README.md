@@ -18,8 +18,12 @@
 * [document](https://github.com/yzzting/hexo-theme-MyFairLady/blob/master/doc/README-en.md)
 
 ### Installation
-
-    $ git clone https://github.com/yzzting/hexo-theme-MyFairLady.git
+    hexo init blog
+    cd blog
+    npm install
+    npm install --save hexo-renderer-jade hexo-renderer-scss
+    cd theme
+    $ git clone https://github.com/yzzting/hexo-theme-MyFairLady.git MyFairLady
 
 Then update your blog's main **_config.yml** to set the theme to MyFairLady    
 
