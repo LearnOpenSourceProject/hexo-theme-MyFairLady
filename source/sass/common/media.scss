@@ -13,6 +13,7 @@ $media-title-margin: 10%;
 
 $media-about-width: 100%;
 $media-about-margin: 4%;
+$media-about-size: 30px;
 
 $media-archives-padding: 0 2%;
 $media-archives-width: 95%;
@@ -61,6 +62,13 @@ $media-archives-fontSize: 14px;
             }
             .about-main {
                 display: block;
+                .about-body{
+                  .about-header {
+                    p {
+                      line-height: $media-about-size;
+                    }
+                  }
+                }
                 .about-photo {
                   margin-bottom: $media-about-margin;
                     img {

@@ -1,19 +1,16 @@
 //About setting
 $about-margin: 0 auto;
 $about-padding: 3.5%;
-
+$about-size: 80px;
 $about-body-padding: 2% 0;
-
 $about-title-fontSize: 175%;
-$about-title-margin: 2% 0;
+$about-title-margin: 5% 0;
 $about-title-lineHeight: 1;
 $about-title-color: rgb(93, 93, 93);
-
 $about-show-margin: 8%;
 $about-list-padding: 3% 0;
-$about-talent-margin: 5%;
+$about-talent-margin: 15%;
 $about-img-width: 90%;
-
 @mixin about {
     .about-main {
         margin: $about-margin;
@@ -22,9 +19,8 @@ $about-img-width: 90%;
         justify-content: center;
         font-family: $article-font;
         .about-body {
-            p {
-                padding: $about-body-padding;
-            }
+            display: flex;
+            flex-direction: column;
             .about-title {
                 color: $blog-main-color;
                 font-family: cathsgbr;
@@ -34,8 +30,15 @@ $about-img-width: 90%;
                     color: $about-title-color;
                 }
             }
+            .about-header {
+              flex: 1;
+                p {
+                    height: $about-size;
+                    line-height: $about-size;
+                }
+            }
             .about-show {
-              margin-top: $about-show-margin;
+                flex: 2;
                 .about-list {
                     li {
                         color: $blog-main-color;
@@ -48,15 +51,21 @@ $about-img-width: 90%;
                     }
                 }
                 .about-talent {
-                  margin-top: $about-talent-margin;
+                    margin-top: $about-talent-margin;
+                    ul {
+                        display: flex;
+                        li {
+                            flex: 1;
+                        }
+                    }
                 }
             }
         }
         .about-photo {
-          img {
-            width: $about-img-width;
-            margin: $about-margin;
-          }
+            img {
+                width: $about-img-width;
+                margin: $about-margin;
+            }
         }
     }
 }
