@@ -16,7 +16,7 @@ $article-title-footSize: 20px;
 $article-entry-marigin: 10px 0;
 $article-entry-color: #969b9f;
 $article-entry-fontSize: 100%;
-
+$article-entry-font: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
 //Article p setting
 
 $article-p-fontSize: 95%;
@@ -58,10 +58,10 @@ $article-p-color: #34495e;
         margin: $article-entry-marigin;
         color: $article-entry-color;
         font-size:$article-entry-fontSize;
+        font-family: $article-entry-font;
         &:before {
           content: '#';
           color: $blog-main-color;
-          font-family: $article-font;
         }
       }
       @for $i from 1 through 6 {
