@@ -13,6 +13,8 @@ $code-green        : #718c00;
 $code-aqua         : #3e999f;
 $code-blue         : #4271ae;
 $code-purple       : #8959a8;
+$code-selector     : #e06842;
+$code-tag          : #4a30ee;
 
 @if $theme_config == "Night" {
   $code-background   : #1d1f21;
@@ -27,6 +29,8 @@ $code-purple       : #8959a8;
   $code-aqua         : #8abeb7;
   $code-blue         : #81a2be;
   $code-purple       : #b294bb;
+  $code-selector     : #e06842;
+  $code-tag          : #4a30ee;
 }
 @if $theme_config == "Eighties" {
   $code-background   : #2d2d2d;
@@ -41,6 +45,8 @@ $code-purple       : #8959a8;
   $code-aqua         : #66cccc;
   $code-blue         : #6699cc;
   $code-purple       : #cc99cc;
+  $code-selector     : #e06842;
+  $code-tag          : #4a30ee;
 }
 @if $theme_config == "Blue" {
   $code-background   : #002451;
@@ -54,7 +60,9 @@ $code-purple       : #8959a8;
   $code-green        : #d1f1a9;
   $code-aqua         : #99ffff;
   $code-blue         : #bbdaff;
+  $code-selector     : #e06842;
   $code-purple       : #ebbbff;
+  $code-tag          : #4a30ee;
 }
 @if $theme_config == "Bright" {
   $code-background   : #000000;
@@ -69,4 +77,6 @@ $code-purple       : #8959a8;
   $code-aqua         : #70c0b1;
   $code-blue         : #7aa6da;
   $code-purple       : #c397d8;
+  $code-selector     : #e06842;
+  $code-tag          : #4a30ee;
 }
