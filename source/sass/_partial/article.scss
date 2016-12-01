@@ -16,6 +16,7 @@ $article-p-fontFamily: Monda, "PingFang SC", "Microsoft YaHei", sans-serif;
 $article-p-lineHeight: 1.8;
 $article-p-letterSpacing: 0.12px;
 $article-p-color: #34495e;
+$article-p-margin: 2% 0;
 @mixin article {
     .article-main {
         overflow: hidden;
@@ -66,6 +67,10 @@ $article-p-color: #34495e;
                 h#{$i} {
                     @extend %article-p;
                 }
+            }
+
+            p {
+                margin: $article-p-margin;
             }
 
             p,
