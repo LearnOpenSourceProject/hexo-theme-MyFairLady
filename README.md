@@ -21,7 +21,7 @@
     hexo init blog
     cd blog
     npm install
-    npm install --save hexo-renderer-jade hexo-renderer-scss
+    npm install --save hexo-renderer-scss
     cd theme
     $ git clone https://github.com/yzzting/hexo-theme-MyFairLady.git MyFairLady
 
