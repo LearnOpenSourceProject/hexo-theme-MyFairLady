@@ -17,6 +17,7 @@ $article-p-lineHeight: 1.8;
 $article-p-letterSpacing: 0.12px;
 $article-p-color: #34495e;
 $article-p-margin: 2% 0;
+$article-p-img: 100%;
 @mixin article {
     .article-main {
         overflow: hidden;
@@ -71,6 +72,10 @@ $article-p-margin: 2% 0;
 
             p {
                 margin: $article-p-margin;
+
+                img {
+                    max-width: 100%;
+                }
             }
 
             p,
