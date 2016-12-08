@@ -1,48 +1,54 @@
 //固定样式 不设置变量
+@mixin pseudo() {
+    content: '';
+    position: absolute;
+}
+@mixin graphics($width,$height) {
+    width: $width;
+    height: $height;
+}
+@mixin offset($top,$right) {
+    top: $top;
+    right: $right;
+}
+@mixin color {
+    background-color: $blog-main-color;
+}
 @mixin heart {
     #heart {
         position: fixed;
-        width: 20px;
-        height: 10px;
         right: 20px;
         bottom: 20px;
-        cursor: pointer;
-        z-index: 2;
-        @extend %pulse;
-        &:after,
-        &:before {
-            position: absolute;
-            content: "";
-            left: 10px;
-            top: 0;
-            width: 10px;
-            height: 20px;
-            background: $blog-main-color;
-            -moz-border-radius: 50px 50px 0 0;
-            border-radius: 50px 50px 0 0;
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            -webkit-transform-origin: 0 100%;
-            -moz-transform-origin: 0 100%;
-            -ms-transform-origin: 0 100%;
-            -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
+        @include graphics(15px,15px);
+        @include color;
+        margin-top: 6px;
+        margin-left: 5px;
+        transform: rotate(-45deg);
+
+        &::after,
+        &::before {
+            @include pseudo();
         }
-        &:after {
-            left: 0;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-            -webkit-transform-origin: 100% 100%;
-            -moz-transform-origin: 100% 100%;
-            -ms-transform-origin: 100% 100%;
-            -o-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+
+        &::before {
+            @include graphics(15px,11px);
+            @include offset(-11px,-1px);
+            @include color;
+            border-left: 1px solid $blog-main-color;
+            border-right: 1px solid $blog-main-color;
+            border-top: 1px solid $blog-main-color;
+            border-radius: 10px 10px 0 0;
+        }
+
+        &::after {
+            @include graphics(15px,11px);
+            @include offset(1px,-13px);
+            @include color;
+            border-left: 1px solid $blog-main-color;
+            border-right: 1px solid $blog-main-color;
+            border-top: 1px solid $blog-main-color;
+            border-radius: 10px 10px 0 0;
+            transform: rotate(90deg);
         }
     }
 }
