@@ -17,6 +17,9 @@ $code-blockquote-padding: 1%;
 $code-blockquote-fontSize: 100%;
 $code-gutter-right: 20px;
 $code-line-height: 20px;
+$code-class: #4f397c;
+$code-attribute: #a2852f;
+$coed-line: #436b24;
 @mixin code {
     %code-block {
         overflow: auto;
@@ -86,8 +89,16 @@ $code-line-height: 20px;
                 color: $code-tag;
             }
 
+            .selector-class {
+                color: $code-class;
+            }
+
             .selector-pseudo {
                 color: $code-selector;
+            }
+
+            .attribute {
+                color: $code-attribute;
             }
 
             .title {
