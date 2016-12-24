@@ -2,11 +2,11 @@ window.onload = function() {
     var obn = document.getElementById('heart');
     var timer = null;
     var isTop = true;
-    window.onscroll = function(){
-    	if (!isTop) {
-    		clearInterval(timer);
-    	}
-    	isTop = false;
+    window.onscroll = function() {
+        if (!isTop) {
+            clearInterval(timer);
+        }
+        isTop = false;
     }
     obn.onclick = function() {
         timer = setInterval(function() {
