@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
         <%
           var title = page.title;
 
@@ -22,6 +21,7 @@
             title = 'Tag: ' + page.tag;
           }
          %>
+    <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title> 
         <!-- 主css -->
         <%- css('/sass/main') %>
         <!-- seo -->

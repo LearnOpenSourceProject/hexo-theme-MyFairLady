@@ -36,6 +36,7 @@ $coed-line: #436b24;
         padding: $code-pre-padding;
         color: $code-foreground;
         text-shadow: none;
+        font-weight: 800;
     }
 
     blockquote {
@@ -138,7 +139,6 @@ $coed-line: #436b24;
             color: $code-orange;
         }
 
-        ,
         .attribute,
         .cdata,
         .class,

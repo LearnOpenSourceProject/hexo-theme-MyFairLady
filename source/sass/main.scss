@@ -4,6 +4,7 @@
 @import './_common/media';
 @import "./_common/global";
 @import './_common/color';
+@import "./_common/mixin";
 //Post
 @import './_partial/post/title';
 @import './_partial/post/heart';
@@ -24,19 +25,14 @@
 //Import global
 @include code;
 @include media;
-//Import post
 @include title;
 @include heart;
 @include nav;
 @include article-date;
 @include paginator;
-@include sidebar; //Import partial
+@include sidebar; 
 @include mobile-bar;
-@include header;
 @include sidebar;
 @include index;
 @include article;
-@include about;
-@include tags;
 @include archivs;
-@include footer;

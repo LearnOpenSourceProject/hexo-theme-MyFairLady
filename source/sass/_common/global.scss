@@ -1,8 +1,13 @@
 @import './color';
+$browser-default-font-size:16px!default;
+
 * {
     margin: 0;
     padding: 0;
     transition-duration: 0.5s;
+}
+html {
+    font-size: $browser-default-font-size;
 }
 a {
     cursor: auto;

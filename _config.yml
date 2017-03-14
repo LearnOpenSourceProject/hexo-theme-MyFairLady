@@ -31,10 +31,10 @@ excerpt_link: ...continue reading
 favicon: http://7xp1k3.com1.z0.glb.clouddn.com/octocat-de-los-muertos.jpg
 
 # Baidu Analytics
-# baidu_analytics: c21994907883f37ffd80e13627dd4faa
+baidu_analytics: c21994907883f37ffd80e13627dd4faa
 
 # Google Analytics
-google_analytics: UA-75314797-1
+# google_analytics: UA-75314797-1
 
 # comments
 disqus: yzzting

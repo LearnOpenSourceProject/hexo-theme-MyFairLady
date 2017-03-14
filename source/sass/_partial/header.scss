@@ -1,54 +1,60 @@
-//Nav header setting
-$header-zIndex: 12;
-$header-paddingVertical: 1.56em;
-$header-paddingHorizontal: 3.75em; //Logo-link setting
-$header-logo-lineHeight: 1;
-$header-logo-linkSize: 300%; //Nav setting
-$header-nav-right: 60px;
-$header-nav-top: 20px;
-$header-nav-lineHeight: 3; //Nav-list-item setting
-$header-list-marginVertical: 0;
-$header-list-marginHorizontal: 0.6em;
-$header-list-fontSize: 112.5%;
+//Header style
+$headerZindex: 12;
+$headerPadding: 1.56em 3.75em;
+$logoSize: 3em;
+
+$navTop: 1.75em;
+$navRight: 1.25em;
+$navLineHeight:3;
+
+$navMargin:0 .6em;
+$navSize: 1.125em;
+
+@mixin logoStyle {
+    cursor: pointer;
+    font-size: $logoSize;
+    font-family: cathsgbr;
+    color: $blog-main-color;
+}
+
+@mixin navItemStyle {
+    float: left;
+    margin: $navMargin;
+    a {
+        font-family: $logoFont;
+        cursor: pointer;
+        color: $blog-main-color;
+        font-size: $navSize;
+
+        &::hover {
+            text-shadow: 0 0 0.1em $blog-main-color;
+        }
+    }
+}
+
+@mixin navStyle {
+    position: absolute;
+    right: $navRight;
+    top: $navTop;
+    line-height: $navLineHeight;
+    .nav-list-item {
+        @include navItemStyle;
+    }
+}
+
 @mixin header {
-    .nav-header {
-        position: relative;
-        z-index: $header-zIndex;
-        padding: $header-paddingVertical $header-paddingHorizontal;
-        box-shadow: 0 0 4px rgba(0,0,0,0.25);
-
-        .logo-link {
-            line-height: $header-logo-lineHeight;
-            display: inline-block;
-            cursor: pointer;
-            font-family: cathsgbr;
-            font-size: $header-logo-linkSize;
-            color: $blog-main-color;
-        }
+    position: relative;
+    z-index: $headerZindex;
+    padding: $headerPadding;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    .logo-link {
+        @include logoStyle;
     }
-
     .nav {
-        position: absolute;
-        right: $header-nav-right;
-        top: $header-nav-top;
-        line-height: $header-nav-lineHeight;
-
-        .nav-list-item {
-            display: inline-block;
-            text-transform: capitalize;
-            position: relative;
-            margin: $header-list-marginVertical $header-list-marginHorizontal;
-
-            a {
-                font-family: $logo-link-font;
-                cursor: pointer;
-                color: $blog-main-color;
-                font-size: $header-list-fontSize;
-
-                &:hover {
-                    text-shadow: 0 0 0.1em $blog-main-color, 0 0 0.3em $blog-main-color;
-                }
-            }
-        }
+        @include navStyle;
     }
+}
+
+.nav-header {
+    @include header;
 }

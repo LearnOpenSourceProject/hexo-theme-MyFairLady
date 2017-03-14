@@ -40,7 +40,7 @@ $archives-entry-color: rgb(93,93,93);
             color: $blog-main-color;
             a {
                 font-size: $archives-entry-fontSize;
-                font-family:$article-font;
+                font-family:$articleFont;
                 &:hover {
                     color: $blog-main-color;
                 }
