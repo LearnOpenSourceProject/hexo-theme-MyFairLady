@@ -36,6 +36,9 @@ $media-archives-fontSize: 14px;
                 }
             }
             .article-main {
+                .bookmark {
+                        display: none;
+                    }
                 .article-entry {
                     p {
                         font-size: $media-article-fontSize;
@@ -46,6 +49,8 @@ $media-archives-fontSize: 14px;
                             font-size: $media-article-fontSize;
                         }
                     }
+
+                    
                 }
                 .article-nav-title{
                   font-size: $media-article-fontSize;
