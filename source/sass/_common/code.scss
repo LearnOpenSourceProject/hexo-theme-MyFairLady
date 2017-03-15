@@ -2,8 +2,8 @@
 $code-margin: 20px 0;
 $code-padding: 15px;
 $code-fontSize: 14px;
-$code-lineHeight: 2;
-$code-fontFamily: Inconsolata,Menlo,Monaco,Consolas,"Courier New",monospace;
+$code-lineHeight: 1.8;
+$code-fontFamily: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 $code-pre-padding: 0;
 $code-highlight-padding: 1px;
 $code-highlight-margin: 0;
@@ -15,7 +15,7 @@ $code-blockquote-background: rgba(182, 173, 173, 0.14);
 $code-blockquote-margin: 2% 0;
 $code-blockquote-padding: 1%;
 $code-blockquote-fontSize: 100%;
-$code-gutter-right: 20px;
+$code-gutter-right: 5px;
 $code-line-height: 20px;
 $code-class: #4f397c;
 $code-attribute: #a2852f;
@@ -24,7 +24,6 @@ $coed-line: #436b24;
     %code-block {
         overflow: auto;
         line-height: $code-lineHeight;
-        font-size: $code-fontSize;
         background-color: $code-background;
         text-align: justify;
         display: block;
@@ -36,6 +35,7 @@ $coed-line: #436b24;
         padding: $code-pre-padding;
         color: $code-foreground;
         text-shadow: none;
+        font-size: $code-fontSize;
     }
 
     blockquote {
@@ -63,7 +63,7 @@ $coed-line: #436b24;
 
         td {
             border: none;
-            // padding: $code-highlight-padding;
+            padding: $code-highlight-padding;
         }
 
         figcaption {
