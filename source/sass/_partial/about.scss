@@ -4,6 +4,7 @@ $aboutTitleSize: 1.75em;
 $aboutLineHeight: 1;
 $aboutTitleColor: rgb(93, 93, 93);
 $aboutChatHeight:5em;
+$aboutChatLineHeight: 2em;
 $aboutListPadding: 3% 0;
 $aboutShowMargin: 15%;
 $aboutImgWidth: 90%;
@@ -20,7 +21,7 @@ $aboutImgWidth: 90%;
 @mixin aboutChat {
     p {
         height: $aboutChatHeight;
-        line-height: $aboutChatHeight;
+        line-height: $aboutChatLineHeight;
     }
 }
 
