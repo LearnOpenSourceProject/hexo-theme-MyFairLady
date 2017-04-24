@@ -46,7 +46,6 @@ $article-p-img: 100%;
         }
 
         .article-inner {
-            text-align: center;
             @import 'post/morelink';
             @include morelink;
         }
